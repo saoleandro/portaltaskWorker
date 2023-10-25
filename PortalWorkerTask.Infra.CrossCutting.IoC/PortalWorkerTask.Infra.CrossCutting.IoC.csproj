@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="7.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Serilog" Version="3.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PortalWorkerTask.Domain\PortalWorkerTask.Domain.csproj" />
+    <ProjectReference Include="..\PortalWorkerTask.Infra.CrossCutting.Services\PortalWorkerTask.Infra.CrossCutting.Services.csproj" />
+    <ProjectReference Include="..\PortalWorkerTask.Infra.Data\PortalWorkerTask.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
